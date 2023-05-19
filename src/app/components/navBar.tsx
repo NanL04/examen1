@@ -3,12 +3,13 @@ import Link from 'next/link';
 export default function NavBar() {
   return (
     <div>      
-      <nav className="w-full bg-gray-800 shadow">
+      <nav className="w-full h-15 bg-black shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
+          <img src="logo.png" id='ddd'/>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <a href="#">
-                <h2 className="text-2xl text-white font-bold">NEXT JS</h2>
+                <h2 className="text-2xl text-white font-bold" id = 'hhh'>PORTFOLIO</h2>
               </a>
               <div className="md:hidden">
                 <button
@@ -39,29 +40,24 @@ export default function NavBar() {
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 `}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="text-white">
-                  <Link href="/">
-                    Home
+                <li className="text-2xl text-white font-bold">
+                  <Link href= "/">
+                    HOME
                   </Link>
-                </li>                
-                <li className="text-white">
+                </li>               
+                <li className="text-2xl text-white font-bold">
                   <Link href="/about">
-                    About US
+                    ABOUT
                   </Link>
                 </li>
-                <li className="text-white">
-                  <Link href="/contactus">
-                    Contact US
+                <li className="text-2xl text-white font-bold">
+                  <Link href="/projects">
+                    PROJECTS                   
                   </Link>
                 </li>
-                <li className="text-white">
-                  <Link href="/blog/1">
-                    Blog 1                    
-                  </Link>
-                </li>
-                <li className="text-white">
-                  <Link href="/blog/2">
-                    Blog 2                    
+                <li className="text-2xl text-white font-bold">
+                  <Link href="contact">
+                    CONTACT                    
                   </Link>
                 </li>
               </ul>

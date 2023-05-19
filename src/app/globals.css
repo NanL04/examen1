@@ -39,3 +39,34 @@ body {
   left: 200px;
   top: -39px;
 }
+
+#ccc{
+  position: fixed;
+}
+
+#fondo2{
+  position: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+}
+
+#divm{
+  position: relative;
+  top: -540px;
+  left: 38%;
+  font-size: 15px;
+}
+
+.divp{
+  background-color: black;
+  background-image: url('../../public/fondo2.jpeg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#www{
+  position: relative;
+  left: 60px;
+  top: 120px;
+}
