@@ -1,15 +1,14 @@
 "use client"
-import Image from 'next/image'
-import { use, useEffect, useState } from 'react'
-
+import React, { useEffect, useState } from 'react';
+import Carousel from '../components/carrusel';
 
 type Repository = {
   id: number;
-  name : string;
-  owner : {
-    avatar_url : string;
-  }
-}
+  name: string;
+  owner: {
+    avatar_url: string;
+  };
+};
 
 async function getinfo(user: string): Promise<Repository[]> {
   const list = await fetch(`https://api.github.com/users/${user}/repos`);
@@ -18,31 +17,42 @@ async function getinfo(user: string): Promise<Repository[]> {
 }
 
 export default function Home() {
-  const [rep, setData] = useState<Repository[]>([]);
-    useEffect(()=>{
-      const fetchdata = async () => {
-        const dataAc = await getinfo('NanL04');
-       setData(dataAc);
-      };
-      fetchdata();
-    
-    }, []);
+  const [repositories, setRepositories] = useState<Repository[]>([]);
 
-    return (
-      <div  className="bg-cover bg-center h-screen" style={{ backgroundImage: 'url("fondo7")' }}>
+  useEffect(() => {
+    const fetchData = async () => {
+      const dataAc = await getinfo('NanL04');
+      setRepositories(dataAc);
+    };
+    fetchData();
+  }, []);
 
-      <div>
-    {rep.map((git: Repository) => (
-      <div key={git.id}>     
-        <h2 className="text-2xl text-white"> 
-        <a href={`https://github.com/NanL04/${git.name}`} target="_blank" rel="noopener noreferrer">
-          {git.name}
-          </a>
-          </h2> 
+  return (
+    <div className="bg-cover bg-center min-h-screen" style={{ backgroundImage: 'url("c.jpg")' }}>
+      <div className="flex flex-col justify-between min-h-screen">
+        <div>
+          <Carousel repositories={repositories} />
+        </div>
+
+        <footer className="bg-black text-white p-4">
+          <div>
+          <p className="text-4xl text-white font-bold">03</p>
+          <div className="container mx-auto text-center">
+          <p>Phone: +506-8585-3917</p>
+          <p>
+          <a className="text-white underline" href="https://www.facebook.com/nancy.lezcano.735/" target="_blank" rel="noopener noreferrer">
+              Facebook: Nancy Lezcano
+            </a>
+          </p>
+          <p>
+            <a className="text-white underline" href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">
+              Email: lezcanoariasn@gmail.com
+            </a>
+          </p>
+          </div>
+          </div>
+        </footer>
       </div>
-    ))}
-  </div>
-  </div>
-    
-    );
+    </div>
+  );
 }
