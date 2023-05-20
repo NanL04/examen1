@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-cover bg-center min-h-screen" style={{ backgroundImage: 'url("c.jpg")' }}>
+    <div className="bg-cover bg-center min-h-screen" style={{ backgroundImage: 'url("https://res.cloudinary.com/dnkli6esx/image/upload/v1684572315/folderprueba/c_mismq5.jpg")' }}>
       <div className="flex flex-col justify-between min-h-screen">
         <div>
           <Carousel repositories={repositories} />

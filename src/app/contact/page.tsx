@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default async function Page() {
   return (
-    <div className="bg-cover bg-center flex flex-col min-h-screen" style={{ backgroundImage: 'url("te.jpg")' }}>
+    <div className="bg-cover bg-center flex flex-col min-h-screen" style={{ backgroundImage: 'url("https://res.cloudinary.com/dnkli6esx/image/upload/v1684572315/folderprueba/te_e2q4np.jpg")' }}>
       <div>
         <h2 className="text-4xl text-white font-bold" id="www">
           HELLO! I'M NANCY, AN IT PROFESSIONAL WITH EXTENSIVE EXPERIENCE AND {' '}

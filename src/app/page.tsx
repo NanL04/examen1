@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <div>
-      <div className="bg-cover bg-center h-screen" style={{ backgroundImage: 'url("fondo2.jpeg")' }}>
+      <div className="bg-cover bg-center h-screen" style={{ backgroundImage: 'url("https://res.cloudinary.com/dnkli6esx/image/upload/v1684572316/folderprueba/fondo2_whkthv.jpg")' }}>
         <center>
           <h2 className="text-6xl text-white font-bold" id="www">INNOVATING WITH </h2>
           <h2 className="text-6xl text-white font-bold" id="www">CODE AND CREATIVITY</h2>

@@ -19,7 +19,7 @@ export default async function Page() {
   const data = await getData();
 
   return (
-    <div className="bg-cover bg-center min-h-screen flex flex-col justify-between" style={{ backgroundImage: 'url("f.jpg")' }}>
+    <div className="bg-cover bg-center min-h-screen flex flex-col justify-between" style={{ backgroundImage: 'url("https://res.cloudinary.com/dnkli6esx/image/upload/v1684572318/folderprueba/f_sdb3eb.jpg")' }}>
       <div>
         <Image src={data.owner.avatar_url} width={550} height={450} alt="Picture of the author" />
       </div>
