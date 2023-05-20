@@ -26,8 +26,7 @@ export default async function Page() {
 
       <div id="divm">
         <p className="text-2xl text-white">
-          Hi, I'm Nancy, a Business Informatics professional with a strong background and
-        </p>
+          Hi, I&apos;m Nancy, a Business Informatics professional with a strong background and</p>
         <p className="text-2xl text-white">experience in the Information Technology field. I am passionate about improving</p>
         <p className="text-2xl text-white">business processes through efficient technological solutions. I have demonstrated</p>
         <p className="text-2xl text-white">exceptional skills in the design, development and implementation of computer</p>

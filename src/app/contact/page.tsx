@@ -6,13 +6,13 @@ export default async function Page() {
     <div className="bg-cover bg-center flex flex-col min-h-screen" style={{ backgroundImage: 'url("https://res.cloudinary.com/dnkli6esx/image/upload/v1684572315/folderprueba/te_e2q4np.jpg")' }}>
       <div>
         <h2 className="text-4xl text-white font-bold" id="www">
-          HELLO! I'M NANCY, AN IT PROFESSIONAL WITH EXTENSIVE EXPERIENCE AND {' '}
+          HELLO! I&apos;M NANCY, AN IT PROFESSIONAL WITH EXTENSIVE EXPERIENCE AND {' '}
         </h2>
         <h2 className="text-4xl text-white font-bold" id="www">
           SOLID KNOWLEDGE IN THE FIELD OF DATABASES.
         </h2>
         <h2 className="text-4xl text-white font-bold" id="www">
-          I AM EXACTLY THE PROFESSIONAL YOU NEED, SO DON'T HESITATE ANY LONGER AND CONTACT ME.{' '}
+          I AM EXACTLY THE PROFESSIONAL YOU NEED, SO DON&apos;T HESITATE ANY LONGER AND CONTACT ME.{' '}
         </h2>
         <h2 className="text-4xl text-black font-bold" id="www">
           .....
