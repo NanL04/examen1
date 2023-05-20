@@ -6,7 +6,8 @@ export default function NavBar() {
       <nav className="w-full h-15 bg-black shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
-          <img src="logo.png" id='ddd'/>
+          <img src="https://res.cloudinary.com/dnkli6esx/image/upload/v1684572788/folderprueba/logo_gjpog2.png" id="ddd" />
+
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <a href="#">
                 <h2 className="text-2xl text-white font-bold" id = 'hhh'>PORTFOLIO</h2>
