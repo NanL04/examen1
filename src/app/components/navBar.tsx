@@ -10,7 +10,7 @@ export default function NavBar() {
 
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <a href="#">
-                <h2 className="text-2xl text-white font-bold" id = 'hhh'>PORTFOLIO</h2>
+                <h2 className="text-2xl text-white font-bold" id = 'hhh'>CHATGPT</h2>
               </a>
               <div className="md:hidden">
                 <button
@@ -40,7 +40,7 @@ export default function NavBar() {
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 `}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-2xl text-white font-bold">
                   <Link href= "/">
                     HOME
@@ -52,13 +52,8 @@ export default function NavBar() {
                   </Link>
                 </li>
                 <li className="text-2xl text-white font-bold">
-                  <Link href="/projects">
-                    PROJECTS                   
-                  </Link>
-                </li>
-                <li className="text-2xl text-white font-bold">
-                  <Link href="contact">
-                    CONTACT                    
+                  <Link href="/char">
+                  CHARACTERISTICS
                   </Link>
                 </li>
               </ul>
